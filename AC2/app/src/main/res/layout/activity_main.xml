@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3FB578"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgBig"
+        android:layout_width="150dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/jeff_burger" />
+
+    <ImageView
+        android:id="@+id/imgStar"
+        android:layout_width="150dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBig"
+        app:srcCompat="@drawable/starbucks" />
+
+    <TextView
+        android:id="@+id/txtBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="BigJeffs Burguer"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBig" />
+
+    <Button
+        android:id="@+id/btnBig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FF5722"
+        android:onClick="saibaMaisBigJeffs"
+        android:text="SAIBA MAIS"
+        android:textColor="#000000"
+        app:icon="@android:drawable/ic_menu_set_as"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtBig" />
+
+    <TextView
+        android:id="@+id/txtStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Starbucks"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgStar" />
+
+    <Button
+        android:id="@+id/btnStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#009688"
+        android:onClick="saibaMaisStarbucks"
+        android:text="SAIBA MAIS"
+        android:textColor="#000000"
+        app:icon="@android:drawable/ic_menu_set_as"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtStar" />
+
+    <ImageView
+        android:id="@+id/imgTammy"
+        android:layout_width="150dp"
+        android:layout_height="115dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnStar"
+        app:srcCompat="@drawable/tammy" />
+
+    <TextView
+        android:id="@+id/txtTammy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Tammy Pastelaria"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgTammy" />
+
+    <Button
+        android:id="@+id/btnTammy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#FFEB3B"
+        android:onClick="saibaMaisTammyPastelaria"
+        android:text="SAIBA MAIS"
+        android:textColor="#000000"
+        app:icon="@android:drawable/ic_menu_set_as"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTammy" />
+</androidx.constraintlayout.widget.ConstraintLayout>
